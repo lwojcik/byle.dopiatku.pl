@@ -2,8 +2,8 @@ import isLeapYear from '../isLeapYear/isLeapYear';
 import getMonthDays from '../getMonthDays/getMonthDays';
 
 const calculateRemainder = (yearArray: number[][], i: number, isLeapYear: boolean) => {
-  const lastFridayOfPreviousMonth = yearArray[i-1].slice(-1)[0];
-  const daysOfPreviousMonth = getMonthDays(i-1, isLeapYear);
+  const lastFridayOfPreviousMonth = yearArray[i - 1].slice(-1)[0];
+  const daysOfPreviousMonth = getMonthDays(i - 1, isLeapYear);
   return (lastFridayOfPreviousMonth - daysOfPreviousMonth) + 7;
 }
 
