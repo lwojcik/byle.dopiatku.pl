@@ -76,8 +76,8 @@ Array contains ALL fridays in givan year.
       "18/12/2020",
       "25/12/2020"
    ]
-}```
-
+}
+```
 ### /CalendarProps
 
 Returns JSON with 4 elements, given year, month, currend day and first friday of a month eg.
@@ -89,7 +89,6 @@ Returns JSON with 4 elements, given year, month, currend day and first friday of
    "firstFriday":7
 }
 ```
-
 ## Build
 ```
 mvn package
