@@ -23,7 +23,7 @@ const getYearArray = (year: number, firstFriday: number) => {
     }
   }
 
-  return yearArray;
+  return yearArray as number[][];
 }
 
 export default getYearArray;
