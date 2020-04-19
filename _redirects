@@ -6,6 +6,7 @@ https://www.byle.dopiatku.pl/* https://byle.dopiatku.pl/:splat 301!
 https://www.dopiatku.pl/* https://byle.dopiatku.pl/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
+https://byledopiatku.netlify.app/* https://byle.dopiatku.pl/:splat 301!
 https://byledopiatku.netlify.com/* https://byle.dopiatku.pl/:splat 301!
 
 # any.tofriday.net
@@ -16,4 +17,5 @@ https://tofriday.net/* https://any.tofriday.net/:splat 301!
 https://www.any.tofriday.net/* https://any.tofriday.net/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
+https://anytofriday.netlify.app/* https://any.tofriday.net/:splat 301!
 https://anytofriday.netlify.com/* https://any.tofriday.net/:splat 301!
