@@ -1,12 +1,11 @@
-import React from 'react';
 import classnames from 'classnames/bind';
 import { translate } from 'react-i18nify';
-import MonthRow from '../MonthRow/MonthRow';
-import FridayRow from '../FridayRow/FridayRow';
-import Month from '../Month/Month';
-import Friday from '../Friday/Friday';
+import MonthRow from 'components/MonthRow/MonthRow';
+import FridayRow from 'components/FridayRow/FridayRow';
+import Month from 'components/Month/Month';
+import Friday from 'components/Friday/Friday';
 import styles from './Calendar.module.scss';
-import getYearArray from '../../helpers/getYearArray/getYearArray';
+import getYearArray from 'helpers/getYearArray/getYearArray';
 
 interface CalendarProps {
   year: number;

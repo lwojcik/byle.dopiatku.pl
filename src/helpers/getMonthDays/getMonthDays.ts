@@ -27,7 +27,7 @@ const monthDays = (isLeap?: boolean) => [
   31,
 ];
 
-const getMonthDays = (whichMonth: Month | number, isLeap?: boolean) =>
+const getMonthDays = (whichMonth: Month, isLeap?: boolean) =>
   monthDays(isLeap)[whichMonth];
 
 export default getMonthDays;

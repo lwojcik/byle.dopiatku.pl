@@ -1,9 +1,11 @@
-import isLeapYear from '../isLeapYear/isLeapYear';
-import getMonthDays from '../getMonthDays/getMonthDays';
+import isLeapYear from 'helpers/isLeapYear/isLeapYear';
+import getMonthDays from 'helpers/getMonthDays/getMonthDays';
+import { Month } from 'types';
 
-const calculateRemainder = (yearArray: number[][], i: number, isLeapYear: boolean) => {
-  const lastFridayOfPreviousMonth = yearArray[i - 1].slice(-1)[0];
-  const daysOfPreviousMonth = getMonthDays(i - 1, isLeapYear);
+const calculateRemainder = (yearArray: number[][], i: Month, isLeapYear: boolean) => {
+  const monthIndex = i - 1 as Month;
+  const lastFridayOfPreviousMonth = yearArray[monthIndex].slice(-1)[0] as Month;
+  const daysOfPreviousMonth = getMonthDays(monthIndex, isLeapYear);
   return (lastFridayOfPreviousMonth - daysOfPreviousMonth) + 7;
 }
 
@@ -12,11 +14,11 @@ const getYearArray = (year: number, firstFriday: number) => {
   let yearArray = new Array(12);
 
   for (let i = 0; i <= 11; i++) {
-    const monthDays = getMonthDays(i, leapYear);
+    const monthDays = getMonthDays(i as Month, leapYear);
     yearArray[i] = [];
     const remainder = i === 0
       ? firstFriday
-      : calculateRemainder(yearArray, i, leapYear);
+      : calculateRemainder(yearArray, i as Month, leapYear);
 
     for (let j = remainder; j <= monthDays; j += 7) {
       yearArray[i].push(j);
