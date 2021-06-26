@@ -1,16 +1,9 @@
-import React from 'react';
-import Calendar from '../Calendar/Calendar';
-import './App.module.scss';
+import './App.sass';
 
-const App = () => {
+function App() {
   return (
     <div className="App">
-      <Calendar
-        year={2020}
-        month={1}
-        day={13}
-        firstFriday={3}
-      />
+      b
     </div>
   );
 }

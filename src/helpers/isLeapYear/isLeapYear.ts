@@ -1,6 +1,5 @@
-import leapYear from 'leap-year';
-
 const isLeapYear = (year: number) =>
-  leapYear(year);
+  (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+
 
 export default isLeapYear;

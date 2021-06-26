@@ -10,7 +10,7 @@ type Month =
   | 9
   | 10
   | 11
-  | 12 | Number;
+  | 12;
 
 const monthDays = (isLeap?: boolean) => [
   31,
@@ -27,7 +27,7 @@ const monthDays = (isLeap?: boolean) => [
   31,
 ];
 
-const getMonthDays = (whichMonth: number, isLeap?: boolean) =>
-  monthDays(isLeap)[whichMonth] as number;
+const getMonthDays = (whichMonth: Month, isLeap?: boolean) =>
+  monthDays(isLeap)[whichMonth];
 
 export default getMonthDays;
