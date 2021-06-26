@@ -1,19 +1,11 @@
 # byle.dopiatku.pl
-# These rules will change if you change your site’s custom domains or HTTPS settings
 
-# Redirect domain aliases to primary domain
 https://www.byle.dopiatku.pl/* https://byle.dopiatku.pl/:splat 301!
 https://www.dopiatku.pl/* https://byle.dopiatku.pl/:splat 301!
-
-# Optional: Redirect default Netlify subdomain to primary domain
 https://byledopiatku.netlify.com/* https://byle.dopiatku.pl/:splat 301!
 
 # any.tofriday.net
-# These rules will change if you change your site’s custom domains or HTTPS settings
 
-# Redirect domain aliases to primary domain
 https://tofriday.net/* https://any.tofriday.net/:splat 301!
 https://www.any.tofriday.net/* https://any.tofriday.net/:splat 301!
-
-# Optional: Redirect default Netlify subdomain to primary domain
 https://anytofriday.netlify.com/* https://any.tofriday.net/:splat 301!

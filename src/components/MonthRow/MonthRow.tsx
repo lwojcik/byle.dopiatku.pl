@@ -1,6 +1,6 @@
-import React, { Fragment, ReactElement } from 'react';
+import { Fragment, ReactElement } from 'react';
 import classnames from 'classnames/bind';
-import styles from './MonthRow.module.scss';
+import styles from './MonthRow.module.sass';
 
 interface MonthRowProps {
   months: string[];

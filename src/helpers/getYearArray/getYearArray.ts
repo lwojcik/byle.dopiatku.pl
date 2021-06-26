@@ -15,8 +15,8 @@ const getYearArray = (year: number, firstFriday: number) => {
     const monthDays = getMonthDays(i, leapYear);
     yearArray[i] = [];
     const remainder = i === 0
-     ? firstFriday
-     : calculateRemainder(yearArray, i, leapYear);
+      ? firstFriday
+      : calculateRemainder(yearArray, i, leapYear);
 
     for (let j = remainder; j <= monthDays; j += 7) {
       yearArray[i].push(j);

@@ -1,6 +1,6 @@
-import React, { Fragment, ReactElement } from 'react';
+import { Fragment, ReactElement } from 'react';
 import classnames from 'classnames/bind';
-import styles from './FridayRow.module.scss';
+import styles from './FridayRow.module.sass';
 
 interface FridayRowProps {
   fridays: number[];

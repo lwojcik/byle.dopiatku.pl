@@ -1,6 +1,5 @@
-import React from 'react';
 import classnames from 'classnames/bind';
-import styles from './Friday.module.scss';
+import styles from './Friday.module.sass';
 
 interface MonthProps {
   day: number;
